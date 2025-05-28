@@ -1,0 +1,84 @@
+.kalpli-btn:hover {
+  cursor: url('heart.cur'), auto;
+}
+
+body {
+  cursor: url('heart.cur'), auto;
+  background-image: url(image/ben.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#gonderBtn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: url('heart.cur');
+  transition: 0.3s;
+}
+
+#gonderBtn:hover {
+  background-color: black;
+  color: palevioletred;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  pointer-events: none;
+  animation: flyUp 1s ease-out forwards;
+  z-index: 9999;
+  transition: transform 1s; opacity: 1s;
+}
+
+ @keyframes flyUp {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-150px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes flyLeft {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100px) translateY(-80px) rotate(-360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes flyRight {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100px) translateY(-80px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes scaleUpFade {
+    0% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2) rotate(180deg);
+      opacity: 0;
+    }
+  }
+  
+  .fotokart {
+   width: 1200px;
+   height: 2000px;
+  }
